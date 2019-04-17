@@ -14,9 +14,12 @@
   Then alert your name using dot notation.
 */
 
-//Code here
+var me = {
+  name: "Peter",
+  age: 28
+}
 
-
+me.age
 
 ////////// PROBLEM 2 //////////
 
@@ -25,8 +28,14 @@
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-//Code here
-
+var favoriteThings = {
+  band: "none",
+  food: "chocolate",
+  person: "my girlfriend",
+  book: "The Hobbit",
+  movie: "Scent of a Woman",
+  holiday: "my birthday"
+}
 
 
 /*
@@ -34,8 +43,8 @@
   and then another key named 'brand' with the value being your favorite brand.
 */
 
-//Code here
-
+favoriteThings.car = "Maseratti"
+favoriteThings.brand = "Apple"
 
 
 /*
@@ -43,8 +52,8 @@
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-//Code here
-
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
 
 
 ////////// PROBLEM 3 //////////
@@ -57,16 +66,24 @@
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
 */
 
-//Code here
+var backPack = {
 
+}
+
+var item = 'firstPocket'
+
+backPack['item'] = 'firstPocket'
+
+backPack.color = 'grey'
+
+backPack
 
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
-//Code here
-
+backPack
 
 
 /*
@@ -75,8 +92,7 @@ Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. 
 */
 
-//Code here
-
+console.log(backPack)
 
 
 ////////// PROBLEM 4 //////////
