@@ -72,7 +72,8 @@ var backPack = {
 
 var item = 'firstPocket'
 
-backPack['item'] = 'firstPocket'
+backPack[item] = 'firstPocket'
+backPack[item] = 'chapstick'
 
 backPack.color = 'grey'
 
@@ -114,7 +115,8 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+user2.name = 'Tyler S. McGinnis'
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
@@ -137,24 +139,34 @@ var user2 = {
   Create an empty object called methodCollection.
 */
 
-//Code Here
+var methodCollection = {
+  alertHello: function(){
+    alert('hello');
+  },
+  logHello: function() {
+    console.log('hello')
+  }
+}
 
 
-
+methodCollection.alertHello();
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
-  One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
+  One called 'alertHello' which alerts 'hello' and another method 
+  called 'logHello' which logs 'hello' to the console. 
 */
 
-//Code Here
-
+// methodCollection.alertHello = alert('"hello"')
+// methodCollection.logHello = console.log('"hello"')
 
 
 /*
   Now call your alertHello and logHello methods.
 */
 
-//Code Here
+// alertHello
+// logHello
+
 
 
 
@@ -165,7 +177,14 @@ var user2 = {
   Return a new object with all of the information that you passed in.
 */
 
-//Code Here
+function makePerson(name, birthday, ssn) {
+  let obj = {}
+  obj['name'] = name
+  obj['birthday'] = birthday
+  obj['ssn'] = ssn
+  return obj
+}
+
 
 
 
@@ -176,6 +195,22 @@ var user2 = {
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-//Code Here
+function makeCard(cardNumber, expirationDate, securityCode) {
+  let newCreditCard = {}
+  newCreditCard['cardNumber'] = cardNumber
+  newCreditCard['expirationDate'] = expirationDate
+  newCreditCard['securityCode'] = securityCode
+  return newCreditCard
+}
 
 
+// function buildAnimal(species, sound, color) {
+//   return {
+//     species,
+//     sound,
+//     color,
+//     makeSound: function() {
+//       console.log(sound)
+//     }
+//   }
+// }
